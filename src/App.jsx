@@ -10,9 +10,9 @@ export default function App() {
   }
 
   return (
-    <>
+    <div className="d-flex flex-column justify-content-center">
       <Form setList={setList} />
       <ItemList list={list} deleteItem={deleteItem} />
-    </>
+    </div>
   );
 }

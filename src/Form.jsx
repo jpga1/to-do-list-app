@@ -18,14 +18,22 @@ export default function Form({ setList }) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form
+      onSubmit={handleSubmit}
+      className="d-flex flex-wrap justify-content-around my-5"
+    >
       <input
         type="text"
         name="input"
         id=""
         onChange={(e) => setInput(e.target.value)}
+        className="border rounded form-control form-control-lg"
       />
-      <input type="submit" value="add" />
+      <input
+        type="submit"
+        value="+"
+        className="font-weight-bold btn btn-primary btn-lg btn-block"
+      />
     </form>
   );
 }
